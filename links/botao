@@ -1,0 +1,6 @@
+<div class="categorias">
+    <a target="_parent" href="camisas.html" class="botao" title="Camisas">Camisas</a>
+    <a target="_parent" href="moletom.html" class="botao" title="Moletom">Moletom</a>
+    <a target="_parent" href="cosplay.html" class="botao" title="cosplay">Cosplay</a>
+    <a target="_parent" href="action.html" class="botao" title="action">Action Figure</a>
+</div>

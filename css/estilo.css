@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    scroll-behavior: smooth;
+}
+
+/* Costumizacao do Header */
+header{
+    background: #14022270;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 10;
+}
+
+header .logo{
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    color: #ffffff;
+    padding: 6px 15px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+header ul li a:hover ,
+header ul li a.active {
+    background: #ffffff;
+    color: #633DAD;
+}
+
+
+/*  Costumizacao do Body GERAL */
+body {
+    background-image: url(../img/fundo_produtos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed
+}
+
+/* Costumizacao dos cards de produto */
+
+.coluns{
+    margin: 50px;
+    padding: 50px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    position: relative;
+    width: 320px;
+    height: 420px;
+    background: linear-gradient(#140222,#413a46fa);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card:before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#633DAD,#140222);
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+
+.card:hover::before {
+    transform: skewY(390deg);
+    top: -70%;
+}
+
+.card::after{
+    content: 'QGanimes';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 3.5em;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.imgBx{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+.card .imgBx img{
+    max-width: 90%;
+    transition: 0.5s;
+}
+
+.card:hover .imgBx img{
+    max-width: 80%;
+
+}
+
+.card .contentBx{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.card .contentBx h3{
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card .contentBx .price{
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.card .contentBx .buy{
+    position: relative;
+    top: 200px;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    background: #633DAD;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    box-shadow: 0 0 5px #633DAD,
+                0 0 15px #633DAD;
+}
+
+.card:hover .contentBx .buy{
+    top: 0px;
+    opacity: 1;
+}
+
+
+.imgBx2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+.card .imgBx2 img{
+    max-width: 90%;
+    transition: 0.5s;
+}
+
+.card:hover .imgBx2 img{
+    max-width: 80%;
+}
+
+.imgBx3{
+    position: relative;
+    width: 83%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+.card .imgBx3 img{
+    max-width: 90%;
+    transition: 0.5s;
+}
+
+.card:hover .imgBx3 img{
+    max-width: 80%;
+}
+
+.imgBx4{
+    position: relative;
+    width: 59%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+.card .imgBx4 img{
+    max-width: 90%;
+    transition: 0.5s;
+}
+
+.card:hover .imgBx4 img{
+    max-width: 80%;
+}
